@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b20ef946ea3afcc837ffa89574272048.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-07acee6b59dbe641e9e4d2b1cc865e4a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -157,12 +157,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="text-box">
 <p>We are launching the Safer Parks Dashboard across England and Wales on the 4th of November 2026.</p>
 <p>For those completing the ’Safer Parks: Improving Access for Women and Girls – Training for Professionals’ online training please continue with the course and come back to checkout the dashboard from the 04/11/26</p>
-<details>
-<summary style="color: #572B6F !important;">
-Warranty and liability (click to expand)
-</summary>
-The software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
-</details>
+<!-- <details>
+  <summary style="color: #572B6F !important;">Warranty and liability (click to expand)</summary>
+  The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
+</details> -->
 </div>
 <p><br></p>
 <!-- Please select your region from the list below to launch the relevant view on the dashboard. You can also scroll down to the map below to check which region you are in. The map is interactive, so you can zoom in and out to see the regions more clearly. Please note that simplified geometries are used for the map to improve performance, so some regions may appear slightly different from their actual boundaries.
@@ -321,7 +319,7 @@ Tip: bookmark your region's dashboard view for quick access in the future.
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/murphyqm-external\.github\.io\/Safer-Parks\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
