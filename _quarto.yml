@@ -16,7 +16,10 @@ website:
         text: Home
       - about.qmd
       - guide.qmd
-      - data.qmd
+      - text: Methods
+        href: data.qmd
+      - text: FAQs
+        href: faqs.qmd
       - partners.qmd
       - text: Launch
         href: launch.qmd
