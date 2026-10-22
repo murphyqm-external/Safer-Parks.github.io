@@ -37,6 +37,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./assets/icon-parks4.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -46,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-07acee6b59dbe641e9e4d2b1cc865e4a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f37cabbb62a98dfa70e88f82810121a9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +76,34 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-39QR6T27XH"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-39QR6T27XH', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"interstitial",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":"",
+"website_privacy_policy_url":"https://murphyqm.github.io/Safer-Parks.github.io/privacy.html"
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 
 
 </head>
@@ -112,8 +142,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Collaborators</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./launch.html"> 
-<span class="menu-text">Launch</span></a>
+    <a class="nav-link" href="./How_to_cite.html"> 
+<span class="menu-text">Cite us</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -131,13 +161,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-use-the-dashboard" id="toc-how-to-use-the-dashboard" class="nav-link active" data-scroll-target="#how-to-use-the-dashboard">How to use the dashboard</a>
-  <ul class="collapse">
-  <li><a href="#using-individual-data-layers" id="toc-using-individual-data-layers" class="nav-link" data-scroll-target="#using-individual-data-layers">Using individual data layers</a></li>
+  <li><a href="#using-individual-data-layers" id="toc-using-individual-data-layers" class="nav-link active" data-scroll-target="#using-individual-data-layers">Using individual data layers</a></li>
   <li><a href="#using-combined-data-layers" id="toc-using-combined-data-layers" class="nav-link" data-scroll-target="#using-combined-data-layers">Using combined data layers</a></li>
-  </ul></li>
-  <li><a href="#data-layer-guidance" id="toc-data-layer-guidance" class="nav-link" data-scroll-target="#data-layer-guidance">Data layer guidance</a>
-  <ul class="collapse">
   <li><a href="#park-structure" id="toc-park-structure" class="nav-link" data-scroll-target="#park-structure">Park Structure</a></li>
   <li><a href="#park-insights" id="toc-park-insights" class="nav-link" data-scroll-target="#park-insights">Park Insights</a></li>
   <li><a href="#contextual-data" id="toc-contextual-data" class="nav-link" data-scroll-target="#contextual-data">Contextual data</a></li>
@@ -145,7 +170,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#suggested-layer-combinations" id="toc-suggested-layer-combinations" class="nav-link" data-scroll-target="#suggested-layer-combinations">Suggested layer combinations</a></li>
   <li><a href="#guided-use-case-studies-peel-park-bradford" id="toc-guided-use-case-studies-peel-park-bradford" class="nav-link" data-scroll-target="#guided-use-case-studies-peel-park-bradford">Guided use case studies: Peel Park, Bradford</a></li>
   <li><a href="#appendix-dashboard-layers-and-crime-prevention-frameworks" id="toc-appendix-dashboard-layers-and-crime-prevention-frameworks" class="nav-link" data-scroll-target="#appendix-dashboard-layers-and-crime-prevention-frameworks">Appendix: Dashboard Layers and Crime Prevention Frameworks</a></li>
-  </ul></li>
   <li><a href="#download-the-data-layer-guidance-document" id="toc-download-the-data-layer-guidance-document" class="nav-link" data-scroll-target="#download-the-data-layer-guidance-document">Download the Data Layer Guidance document</a></li>
   </ul>
 </nav>
@@ -173,11 +197,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><span class="emphasis">How to Use Data Layers</span></p>
-<p>This page provides guidance on how to use the data layers within the Safer Parks Dashboard, including their source, description, and how they can be used to inform park safety and design decisions. At the bottom of this page you’ll also find this summarised in a downloadable table.</p>
+<p>This page explains what each data layer shows, where the data comes from, and how it can be used to support park safety, design and management decisions. A downloadable summary table is provided at the end of the page.</p>
 <div class="text-box3">
-<p>The dashboard is an interactive tool that uses open spatial data to help practitioners improve safety and inclusion in parks and green spaces across England and Wales. It supports the <a href="https://eprints.whiterose.ac.uk/id/eprint/229530/1/250908_Safer%20Parks_PCPI_Single.pdf"><em>Safer Parks: Improving Access to Women and Girls</em> guidance</a> by enabling evidence-led decisions in design, management and policing.</p>
-<p>This should be read alongside the guidance, with each data layer linked to relevant sections.</p>
+<p>The dashboard supports the <a href="https://eprints.whiterose.ac.uk/id/eprint/229530/1/250908_Safer%20Parks_PCPI_Single.pdf"><em>Safer Parks: Improving Access to Women and Girls</em> guidance</a> guidance by bringing together spatial data that can help inform planning, management and policing. Each data layer is linked to relevant sections of the guidance.</p>
 </div>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
@@ -187,15 +209,13 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div>
-<section id="how-to-use-the-dashboard" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use-the-dashboard">How to use the dashboard</h2>
-<section id="using-individual-data-layers" class="level3">
-<h3 class="anchored" data-anchor-id="using-individual-data-layers">Using individual data layers</h3>
+<section id="using-individual-data-layers" class="level2">
+<h2 class="anchored" data-anchor-id="using-individual-data-layers">Using individual data layers</h2>
 <p>Each layer represents a different aspect of park safety and inclusion. Used on its own, a layer highlights a specific feature, such as where lighting is present or absent, the potential of routes (footpaths) being busy, or where visibility is low. Toggle on a single layer to explore parks in your area and potential issues or opportunities for improvement.</p>
 </section>
-<section id="using-combined-data-layers" class="level3">
-<h3 class="anchored" data-anchor-id="using-combined-data-layers">Using combined data layers</h3>
-<p>The dashboard is most effective when layers are used together. Park safety and inclusion is shaped by multiple factors, for example, a busy route might be poorly lit, or an access point might be obscured by dense vegetation. Combining layers helps build a clear, more complete understanding of where spaces may feel or be less safe. Suggested layer combinations are provided in Section 4.</p>
+<section id="using-combined-data-layers" class="level2">
+<h2 class="anchored" data-anchor-id="using-combined-data-layers">Using combined data layers</h2>
+<p>The dashboard is most effective when layers are used together. Park safety and inclusion is shaped by multiple factors, for example, a busy route might be poorly lit, or an access point might be obscured by dense vegetation. Combining layers helps build a clear, more complete understanding of where spaces may feel or be less safe. <a href="#suggested-layer-combinations">Suggested layer combinations</a> are provided below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="assets/Partners_graphic-2.png" class="img-fluid figure-img" style="width:90.0%"></p>
@@ -203,9 +223,6 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-</section>
-<section id="data-layer-guidance" class="level1">
-<h1>Data layer guidance</h1>
 <section id="park-structure" class="level2">
 <h2 class="anchored" data-anchor-id="park-structure">Park Structure</h2>
 <div class="callout callout-style-simple callout-note callout-titled">
@@ -648,46 +665,148 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="suggested-layer-combinations" class="level2">
 <h2 class="anchored" data-anchor-id="suggested-layer-combinations">Suggested layer combinations</h2>
-<ul>
-<li><span class="emphasis2">Visibility Analysis + Foliage</span>
-<ul>
-<li>Where might vegetation be contributing to poor sightlines? This combination helps identify areas where targeted maintenance could improve visibility.</li>
-</ul></li>
-<li><span class="emphasis2">Benches &amp; Picnic Tables + Visibility Analysis + Street Lighting + Foliage</span>
-<ul>
-<li>Is seating located in well-lit, visible areas? This combination helps assess whether seating feels safe and highlights whether improvements could encourage use.</li>
-</ul></li>
-<li><span class="emphasis2">Predicted Route Popularity + Street Lighting</span>
-<ul>
-<li>Are the most-used routes adequately lit? This combination helps identify priority routes for lighting improvements, particularly for after dark and evening use.</li>
-</ul></li>
-<li><span class="emphasis2">Access and Exit points + Predicted Route Popularity + Demographics</span>
-<ul>
-<li>Do entrances and key routes serve the surrounding population effectively? This combination can highlight where additional access points or improved routes could support greater use and activation.</li>
-</ul></li>
-<li><span class="emphasis2">Access and Exit points + Predicted Route Popularity + Street Lighting + Visibility Analysis</span>
-<ul>
-<li>What is the safety context at entrances and exits? This combination helps assess how busy, visible, and well lit these areas are.</li>
-</ul></li>
-<li><span class="emphasis2">Park Features + Demographics Data</span>
-<ul>
-<li>Do park facilities reflect the needs of the local population? This combination supports more inclusive and responsive provision.</li>
-</ul></li>
-<li><span class="emphasis2">Demographics Data + Park Boundary + Access and Exit points</span>
-<ul>
-<li>Who lives within walking distance of the park, and how well are they served? This combination helps assess whether access and provision reflect local needs.</li>
-</ul></li>
-<li><span class="emphasis2">Visibility Analysis + Street Lighting + Foliage</span>
-<ul>
-<li>Where are the highest-priority areas for intervention? This combination highlights where low visibility, poor lighting, and dense vegetation overlap.</li>
-</ul></li>
-</ul>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Identifying Areas with Poor Visibility
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="emphasis2">Layers: Visibility Analysis + Foliage</span></p>
+<p>Where might vegetation be contributing to poor sightlines? This combination helps identify areas where targeted maintenance could improve visibility.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Assessing the Safety of Seating Areas
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="emphasis2">Layers: Benches &amp; Picnic Tables + Visibility Analysis + Street Lighting + Foliage</span></p>
+<p>Is seating located in well-lit, visible areas? This combination helps assess whether seating feels safe and highlights whether improvements could encourage use.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Prioritising Lighting Improvements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="emphasis2">Layers: Predicted Route Popularity + Street Lighting</span></p>
+<p>Are the most-used routes adequately lit? This combination helps identify priority routes for lighting improvements, particularly for after dark and evening use.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Understanding How People Access the Park
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="emphasis2">Layers: Access and Exit points + Predicted Route Popularity + Demographics</span></p>
+<p>Do entrances and key routes serve the surrounding population effectively? This combination can highlight where additional access points or improved routes could support greater use and activation.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Reviewing the Safety of Entrances and Exit
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="emphasis2">Layers: Access and Exit points + Predicted Route Popularity + Street Lighting + Visibility Analysis</span></p>
+<p>What is the safety context at entrances and exits? This combination helps assess how busy, visible, and well lit these areas are.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Assessing Whether Facilities Meet Local Needs
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="emphasis2">Layers: Park Features + Demographics Data</span></p>
+<p>Do park facilities reflect the needs of the local population? This combination supports more inclusive and responsive provision.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Supporting Inclusive Engagement and Provision
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="emphasis2">Layers: Demographics Data + Park Boundary + Access and Exit points</span></p>
+<p>Who lives within walking distance of the park, and how well are they served? This combination helps assess whether access and provision reflect local needs.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Identifying Environmental Factors Affecting Safety
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="emphasis2">Layers: Visibility Analysis + Street Lighting + Foliage</span></p>
+<p>Where are the highest-priority areas for intervention? This combination highlights where low visibility, poor lighting, and dense vegetation overlap.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="guided-use-case-studies-peel-park-bradford" class="level2">
 <h2 class="anchored" data-anchor-id="guided-use-case-studies-peel-park-bradford">Guided use case studies: Peel Park, Bradford</h2>
 <p>The following use cases illustrate how the dashboard can support specific decisions. Each case could be available as a screen recording or annotated screenshot walkthrough in the dashboard.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -696,7 +815,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><em>Data layers used: Visibility Analysis + Foliage + Predicted Route Popularity.</em></p>
 <p><img src="assets/image1.png" class="img-fluid"></p>
@@ -718,7 +837,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -727,7 +846,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><em>Data layers used: Predicted Route Popularity + Street Lighting + Access and Exit points + Visibility Analysis.</em></p>
 <p><img src="assets/image2.png" class="img-fluid"></p>
@@ -902,7 +1021,6 @@ Seating encourages people to spend time in parks, increasing natural surveillanc
 <p>Home Office. (2025). What works to reduce violence against women and girls: A summary of the evidence. Crown copyright. <a href="https://assets.publishing.service.gov.uk/media/6943f8a5143d960161547e74/31.260_VAWG_03_Evidence_Review_FINAL_181225_WEB.pdf" class="uri">https://assets.publishing.service.gov.uk/media/6943f8a5143d960161547e74/31.260_VAWG_03_Evidence_Review_FINAL_181225_WEB.pdf</a></p>
 <p>Department for Environment, Food &amp; Rural Affairs (DEFRA). (2022). LiDAR composite digital surface model and digital terrain model. Data.gov.uk. <a href="https://www.data.gov.uk/dataset/f0db0249-f17b-4036-9e65-309148c97ce4/national-lidar-programme" class="uri">https://www.data.gov.uk/dataset/f0db0249-f17b-4036-9e65-309148c97ce4/national-lidar-programme</a></p>
 <p>OpenStreetMap contributors. (2024). OpenStreetMap data via Geofabrik. <a href="https://download.geofabrik.de/" class="uri">https://download.geofabrik.de/</a></p>
-</section>
 </section>
 <section id="download-the-data-layer-guidance-document" class="level1 page-columns page-full">
 <h1>Download the Data Layer Guidance document</h1>
@@ -1330,6 +1448,19 @@ Seating encourages people to spend time in parks, increasing natural surveillanc
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
